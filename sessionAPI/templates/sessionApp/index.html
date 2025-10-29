@@ -1,0 +1,14 @@
+<!DOCTYPE  html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+    <body>
+        <h1> Welcome to the Home Page </h1>
+        <a href="/addItem"> Add Item </a> 
+        <a href="/displayItems"> Display Cart </a>
+        <br/><b>Session Expire Time In Seconds: {{ request.session.get_expiry_age}} </b>
+        <br/><b>Session Expire Time In Seconds: {{ request.session.get_expiry_date}} </b>
+    </body>
+</html>
