@@ -1,0 +1,15 @@
+<!DOCTYPE  html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+  </head>
+    <body>
+        <h1>Login Here:</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}  {% comment %} default user model {% endcomment %}
+            <button type="submit">Login</button>
+        </form>
+    </body>
+  </html>
